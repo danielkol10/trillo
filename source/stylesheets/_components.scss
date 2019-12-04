@@ -19,6 +19,12 @@
     // main axis center
     justify-content: center;
 
+    @media only screen and (max-width: $breakpoint-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
+
     // input doesnt inherit font family
     &__input {
         font-family: inherit;
@@ -323,6 +329,9 @@
         @media only screen and (max-width: $breakpoint-small) {
             padding: 0 1.5rem;
         }
+
+
+
     }
 
     &__rating-average {
@@ -341,6 +350,10 @@
 
         @media only screen and (max-width: $breakpoint-small) {
             font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $breakpoint-smallest) {
+            left: -3rem;
         }
     }
 
